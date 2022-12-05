@@ -12,7 +12,7 @@ public class LionHaveMaleSexParamTest {
     private final String sex;
     private final boolean expected;
 
-    @Parameterized.Parameters
+    @Parameterized.Parameters (name = "Пол: {0}, {1}")
     public static Object[][] getSexData() {
         return new Object[][]{
                 {"Самец", true},

@@ -13,7 +13,7 @@ import org.junit.runners.Parameterized;
             this.expected = expected;
         }
 
-        @Parameterized.Parameters
+        @Parameterized.Parameters (name = "Число котят: {0}")
         public static Object[][] getKittensData() {
             return new Object[][]{
                     {1},
